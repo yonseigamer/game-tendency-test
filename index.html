@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111015" />
+  <title>나의 게임 플레이 성향</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <p class="eyebrow">FANGAMER POP-UP · PLAYER PROFILE</p>
+      <h1>당신은 게임의 세계를<br />어떻게 기억하나요?</h1>
+      <p class="description">정답은 없습니다. 평소의 플레이에 가장 가까운 선택을 골라 나만의 게임 성향을 확인해 보세요.</p>
+    </header>
+
+    <section class="card start-card save-file-card" id="start-screen">
+      <div class="save-header">
+        <span>NEW GAME</span>
+        <strong>SAVE FILE 001</strong>
+      </div>
+      <div class="save-slot">
+        <div class="save-icon" aria-hidden="true">✦</div>
+        <div class="save-copy">
+          <p class="mini-label">PLAYER CREATE</p>
+          <h2>새로운 플레이어를 생성합니다</h2>
+          <p>결과 카드에 표시할 닉네임을 입력해 주세요.</p>
+        </div>
+      </div>
+      <label class="nickname-label" for="nickname-input">PLAYER NAME</label>
+      <input id="nickname-input" class="nickname-input" type="text" maxlength="12" autocomplete="off" placeholder="닉네임 입력" />
+      <p class="input-message" id="input-message" aria-live="polite"></p>
+      <div class="start-points">
+        <span>8개의 질문</span><span>주특성 + 부특성</span><span>PNG 결과 카드</span>
+      </div>
+      <button class="primary-button" id="start-button">SAVE FILE 생성하기</button>
+      <small>입력한 닉네임은 기기에 저장되거나 서버로 전송되지 않습니다.</small>
+    </section>
+
+    <section class="card hidden" id="question-screen">
+      <div class="progress-wrap">
+        <span id="progress-text">01 / 08</span>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+      <button class="text-button" id="back-button" type="button">← 이전 질문</button>
+      <p class="question-label" id="question-label">SCENE 01</p>
+      <h2 id="question-title"></h2>
+      <p class="question-hint">가장 이상적인 답보다, 실제 플레이할 때의 모습에 가까운 쪽을 선택해 주세요.</p>
+      <div class="answer-list" id="answer-list"></div>
+    </section>
+
+    <section class="card result-card hidden" id="result-screen">
+      <p class="question-label result-kicker">PLAYER STATUS · SAVE FILE 001</p>
+      <p class="result-player-name" id="result-player-name"></p>
+
+      <div class="status-hero">
+        <div class="radar-panel panel">
+          <span class="panel-label">MOTIVATION HEX</span>
+          <svg id="radar-chart" class="radar-chart" viewBox="0 0 420 420" role="img" aria-label="6개 게임 동기 점수 육각형 차트"></svg>
+        </div>
+        <div class="result-identity panel">
+          <p class="result-code" id="result-code"></p>
+          <h2 id="result-title"></h2>
+          <p class="matched-character" id="matched-character"></p>
+          <p class="result-summary" id="result-summary"></p>
+          <div id="result-keywords" class="keyword-list"></div>
+        </div>
+      </div>
+
+      <div class="score-grid" id="score-grid"></div>
+
+      <div class="panel interpretation-panel">
+        <span class="panel-label">TOP MOTIVATIONS</span>
+        <p id="top-motivation-copy"></p>
+      </div>
+
+      <div class="result-actions">
+        <button class="primary-button save-button" id="save-image-button">결과 이미지 저장하기</button>
+        <button class="secondary-button" id="restart-button">다시 테스트하기</button>
+      </div>
+      <p class="save-status" id="save-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 920" role="img" aria-label="크리스 임시 일러스트">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#332d48"/><stop offset="1" stop-color="#18151f"/></linearGradient></defs>
+<rect width="720" height="920" rx="56" fill="url(#g)"/>
+<circle cx="360" cy="340" r="160" fill="#e3ff62" opacity=".12"/>
+<path d="M215 745c16-151 69-239 145-239s129 88 145 239" fill="#e3ff62" opacity=".92"/>
+<circle cx="360" cy="385" r="105" fill="#f6f3fa"/>
+<circle cx="322" cy="380" r="12" fill="#17151e"/><circle cx="398" cy="380" r="12" fill="#17151e"/>
+<text x="360" y="158" text-anchor="middle" fill="#e3ff62" font-family="Arial,sans-serif" font-size="72" font-weight="800">◆</text>
+<text x="360" y="822" text-anchor="middle" fill="#f6f3fa" font-family="Arial,sans-serif" font-size="44" font-weight="800">크리스</text>
+<text x="360" y="864" text-anchor="middle" fill="#aaa4b5" font-family="Arial,sans-serif" font-size="19" letter-spacing="5">FREEDOM</text>
+</svg>
