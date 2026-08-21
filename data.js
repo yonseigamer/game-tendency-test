@@ -37,7 +37,7 @@ const testData = {
       {text:"퀘스트·도감·숨은 요소를 빠짐없이 채웠을 때",scores:{achievement:3,creativity:1},next:"q5"},
       {text:"아무도 못 깬 난관을 내 실력으로 넘었을 때",scores:{mastery:2,achievement:2},next:"q5"},
       {text:"좋아하는 인물과 특별한 관계를 만들었을 때",scores:{social:2,immersion:2},next:"q5"}]},
-    q5:{label:"SCENE 05 · WORLD",question:"새로운 세계에 들어섰을 때 \n가장 먼저 끌리는 것은?",answers:[
+    q5:{label:"SCENE 05 · WORLD",question:"새로운 세계에서 가장 먼저 끌리는 것은?",answers:[
       {text:"이 세계에서 내가 어떤 존재가 될 수 있는지",scores:{immersion:3,creativity:1},next:"q6"},
       {text:"등장인물과 사건이 어떤 이야기로 이어지는지",scores:{immersion:3,social:1},next:"q6"},
       {text:"어떤 적과 위험한 구간이 기다리는지",scores:{action:3,mastery:1},next:"q6"},
@@ -47,7 +47,7 @@ const testData = {
       {text:"맵 구석구석을 뒤져 비밀과 이스터에그를 찾는다.",scores:{creativity:3,achievement:1},next:"q7"},
       {text:"새로운 빌드와 기묘한 조합을 계속 실험한다.",scores:{creativity:3,mastery:1},next:"q7"},
       {text:"메인 이야기에 집중해 세계의 결말을 확인한다.",scores:{immersion:3,achievement:1},next:"q7"}]},
-    q7:{label:"SCENE 07 · THRILL",question:"당신을 가장 빠르게\n게임에 몰입시키는 장면은?",answers:[
+    q7:{label:"SCENE 07 · THRILL",question:"당신이 가장 몰입되는 장면은?",answers:[
       {text:"폭발과 타격음이 쏟아지는 화려한 전투",scores:{action:3,achievement:1},next:"q8"},
       {text:"실수 한 번이 패배로 이어지는 긴장된 보스전",scores:{action:2,mastery:2},next:"q8"},
       {text:"동료와 동시에 움직여 위기를 넘기는 순간",scores:{action:2,social:2},next:"q8"},
@@ -57,7 +57,7 @@ const testData = {
       {text:"공략을 나누고 함께 실력을 높이기",scores:{social:2,mastery:2},next:"q9"},
       {text:"캐릭터와 스토리에 관해 이야기하기",scores:{social:2,immersion:2},next:"q9"},
       {text:"내 꾸미기·빌드·플레이를 공유하기",scores:{social:2,creativity:2},next:"q9"}]},
-    q9:{label:"SCENE 09 · PERFECT RUN",question:"당신이 말하는\n‘완벽한 플레이’에 가장 가까운 것은?",answers:[
+    q9:{label:"SCENE 09 · PERFECT RUN",question:"당신이 말하는 '완벽한 플레이'는?",answers:[
       {text:"한 번도 실수하지 않고 고난도 구간을 돌파하는 것",scores:{mastery:3,achievement:1},next:"q10"},
       {text:"가장 효율적인 전략과 자원 배분을 찾아내는 것",scores:{mastery:3,creativity:1},next:"q10"},
       {text:"모든 콘텐츠와 목표를 빠짐없이 끝내는 것",scores:{achievement:3,mastery:1},next:"q10"},
@@ -79,20 +79,20 @@ const testData = {
       {text:"일부러 전혀 다른 선택과 조합을 시험한다.",scores:{creativity:3,immersion:1},next:null}]}
   },
   combinations: {
-    "action-social": {title:"전장을 함께 누비는 돌격대장",character:"클로스",game:"Hollow Knight",description:"동료들과 함께 시련에 뛰어들고, 긴장과 환호를 나누며 위기를 극복하는 플레이어입니다.",keywords:["협동","전투","용기","호흡"],image:"assets/characters/action-social.svg",matchReason:"클로스는 위험한 순간에도 동료와 함께 전장에 뛰어들며, 함께 힘을 합쳐 시련을 넘어서는 모습을 보여줍니다."},
-    "action-mastery": {title:"한계에 도전하는 결투가",character:"사마귀 군주들",game:"Hollow Knight",description:"자신의 조작과 판단을 시험하는 최고의 시련 자체를 즐깁니다. 패배는 다음 도전을 위한 연습입니다.",keywords:["보스전","피지컬","집중","재도전"],image:"assets/characters/action-mastery.svg",matchReason:"사마귀 군주들은 정확한 움직임과 뛰어난 전투 실력을 중요하게 여기며, 실력으로 시련을 넘어선 상대를 존중합니다."},
-    "action-achievement": {title:"업적을 사냥하는 정복자",character:"말론",game:"Stardew Valley",description:"위험한 목표일수록 직접 돌파해 성취를 증명하고 싶어 합니다. 강한 보상과 어려운 기록에 끌립니다.",keywords:["토벌","업적","보상","정복"],image:"assets/characters/action-achievement.svg",matchReason:"말론은 위험한 몬스터와 맞서며 새로운 전투 목표에 도전하고, 직접 이룬 성취를 가치 있게 여기는 모험가입니다."},
-    "action-immersion": {title:"세계에 뛰어드는 모험가",character:"기사",game:"Hollow Knight",description:"험난한 세계를 관찰만 하기보다 자신의 두 손으로 헤쳐 나가며 그 안의 이야기를 경험합니다.",keywords:["모험","전투","세계관","여정"],image:"assets/characters/action-immersion.svg",matchReason:"기사는 낯선 신성둥지를 직접 탐험하고 수많은 위험을 헤쳐 나가며, 행동을 통해 세계의 이야기를 경험합니다."},
-    "action-creativity": {title:"전투를 놀이로 바꾸는 트릭스터",character:"메타톤 EX",game:"UNDERTALE",description:"정해진 방식에 머물지 않고 화려하고 독특한 방법으로 챌린지를 자신만의 무대로 바꿉니다.",keywords:["변칙","액션","연출","실험"],image:"assets/characters/action-creativity.svg",matchReason:"메타톤 EX는 전투조차 자신만의 화려한 무대로 바꾸며, 독특한 방식으로 상황을 풀어나가는 개성을 보여줍니다."},
-    "social-mastery": {title:"합을 맞추는 전략적 조력자",character:"퀴렐",game:"Hollow Knight",description:"피드백과 역할 분담을 통해 동료와 함께 성장하고, 완벽한 호흡으로 난관을 넘을 때 희열을 느낍니다.",keywords:["협력","전략","피드백","성장"],image:"assets/characters/social-mastery.svg",matchReason:"퀴렐은 뛰어난 지식과 전투 능력을 바탕으로 동료와 자연스럽게 호흡을 맞추며 함께 난관을 해결합니다."},
-    "social-achievement": {title:"성과를 빛내는 스타 플레이어",character:"알렉스",game:"Stardew Valley",description:"사람들과 활발히 교류하면서도 뛰어난 기록과 성취를 인정받고 싶어 하는 플레이어입니다.",keywords:["경쟁","랭킹","인정","목표"],image:"assets/characters/social-achievement.svg",matchReason:"알렉스는 주변 사람들과 활발히 교류하면서 자신의 목표를 향해 꾸준히 노력하고 성장을 보여주는 인물입니다."},
-    "social-immersion": {title:"관계를 살아가는 롤플레이어",character:"노엘",game:"DELTARUNE",description:"게임 속 인물들과 깊은 관계를 맺고, 그 세계의 한 사람으로 살아가는 경험을 소중히 여깁니다.",keywords:["관계","대화","공감","롤플레잉"],image:"assets/characters/social-immersion.svg",matchReason:"노엘은 주변 인물들과의 관계와 감정에 깊이 연결되어 있으며, 함께하는 사람들과 특별한 이야기를 만들어 갑니다."},
-    "social-creativity": {title:"취향을 나누는 크리에이터",character:"냅스타블룩",game:"UNDERTALE",description:"자신만의 독창적인 스타일을 만들고, 다른 사람과 공유하며 새로운 반응을 얻는 것을 즐깁니다.",keywords:["공유","스타일","창작","커뮤니티"],image:"assets/characters/social-creativity.svg",matchReason:"냅스타블룩은 자신만의 음악과 취향을 소중히 여기고, 그것을 다른 사람과 나누며 즐거움을 발견합니다."},
-    "mastery-achievement": {title:"완벽을 반복하는 완주자",character:"하비",game:"Stardew Valley",description:"완벽한 하나의 플레이를 위해 몇 번이고 도전하며, 결국 스스로 세운 목표를 끝까지 달성합니다.",keywords:["완주","숙련","반복","완벽"],image:"assets/characters/mastery-achievement.svg",matchReason:"하비는 맡은 일을 꼼꼼하게 수행하고 꾸준한 노력으로 목표를 완성해 나가는 성실하고 세심한 인물입니다."},
-    "mastery-immersion": {title:"세계의 진실을 푸는 해석자",character:"렘",game:"Hollow Knight",description:"숨겨진 설정과 단서를 파헤쳐 세계관과 서사를 빈틈없이 이해하려는 플레이어입니다.",keywords:["분석","설정","추리","세계관"],image:"assets/characters/mastery-immersion.svg",matchReason:"렘은 고대 유물과 기록을 세심하게 해석하며, 신성둥지의 역사와 숨겨진 이야기를 깊이 이해하려 합니다."},
-    "mastery-creativity": {title:"시스템을 비트는 연구자",character:"로빈",game:"Stardew Valley",description:"게임의 규칙을 깊이 이해한 뒤, 그 구조를 이용해 새롭고 독창적인 플레이를 만들어 냅니다.",keywords:["시스템","실험","전략","변칙"],image:"assets/characters/mastery-creativity.svg",matchReason:"로빈은 뛰어난 기술과 경험을 활용해 다양한 건축물을 만들며, 익힌 시스템을 자신만의 결과물로 발전시킵니다."},
-    "achievement-immersion": {title:"이야기를 수집하는 기록가",character:"예언자",game:"Hollow Knight",description:"서브퀘스트와 수집 요소를 빠짐없이 모으며, 세계의 이야기를 하나의 완성된 기록으로 남깁니다.",keywords:["수집","기록","서브퀘스트","완성"],image:"assets/characters/achievement-immersion.svg",matchReason:"예언자는 세계 곳곳의 정수를 모으는 여정을 통해 그 안에 담긴 기억과 이야기를 하나씩 발견하도록 이끕니다."},
-    "achievement-creativity": {title:"목표를 새롭게 푸는 개척자",character:"윌리",game:"Stardew Valley",description:"정석적인 길보다 독특한 플레이 방식으로 목표와 도전과제를 달성하는 데 큰 만족을 느낍니다.",keywords:["도전과제","자유","독창성","개척"],image:"assets/characters/achievement-creativity.svg",matchReason:"윌리는 자신이 좋아하는 분야를 깊이 파고들며, 자신만의 방식으로 특별한 목표와 새로운 도전에 나섭니다."},
-    "immersion-creativity": {title:"세계에 흔적을 남기는 방랑자",character:"레아",game:"Stardew Valley",description:"다양한 환경을 찾아다니며 세계에 녹아들고, 자신만의 시선과 흔적을 그 안에 남기고 싶어 합니다.",keywords:["탐험","분위기","창작","발견"],image:"assets/characters/immersion-creativity.svg",matchReason:"레아는 자연과 주변 환경에서 영감을 얻고, 그 세계 속에서 자신만의 삶과 창작물을 만들어 가는 인물입니다."}
+    "action-social": {title:"전장을 함께 누비는 돌격대장",character:"클로스",game:"Hollow Knight",description:"동료들과 함께 시련에 뛰어들고, 긴장과 환호를 나누며 위기를 극복하는 플레이어입니다.",keywords:["협동","전투","용기","호흡"],image:"./assets/characters/closs.png",matchReason:"클로스는 위험한 순간에도 동료와 함께 전장에 뛰어들며, 함께 힘을 합쳐 시련을 넘어서는 모습을 보여줍니다."},
+    "action-mastery": {title:"한계에 도전하는 결투가",character:"사마귀 군주들",game:"Hollow Knight",description:"자신의 조작과 판단을 시험하는 최고의 시련 자체를 즐깁니다. 패배는 다음 도전을 위한 연습입니다.",keywords:["보스전","피지컬","집중","재도전"],image:"./assets/characters/lords.png",matchReason:"사마귀 군주들은 정확한 움직임과 뛰어난 전투 실력을 중요하게 여기며, 실력으로 시련을 넘어선 상대를 존중합니다."},
+    "action-achievement": {title:"업적을 사냥하는 정복자",character:"말론",game:"Stardew Valley",description:"위험한 목표일수록 직접 돌파해 성취를 증명하고 싶어 합니다. 강한 보상과 어려운 기록에 끌립니다.",keywords:["토벌","업적","보상","정복"],image:"./assets/characters/marlon.png",matchReason:"말론은 위험한 몬스터와 맞서며 새로운 전투 목표에 도전하고, 직접 이룬 성취를 가치 있게 여기는 모험가입니다."},
+    "action-immersion": {title:"세계에 뛰어드는 모험가",character:"기사",game:"Hollow Knight",description:"험난한 세계를 관찰만 하기보다 자신의 두 손으로 헤쳐 나가며 그 안의 이야기를 경험합니다.",keywords:["모험","전투","세계관","여정"],image:"./assets/characters/knight.webp",matchReason:"기사는 낯선 신성둥지를 직접 탐험하고 수많은 위험을 헤쳐 나가며, 행동을 통해 세계의 이야기를 경험합니다."},
+    "action-creativity": {title:"전투를 놀이로 바꾸는 트릭스터",character:"메타톤 EX",game:"UNDERTALE",description:"정해진 방식에 머물지 않고 화려하고 독특한 방법으로 챌린지를 자신만의 무대로 바꿉니다.",keywords:["변칙","액션","연출","실험"],image:"./assets/characters/metatone.png",matchReason:"메타톤 EX는 전투조차 자신만의 화려한 무대로 바꾸며, 독특한 방식으로 상황을 풀어나가는 개성을 보여줍니다."},
+    "social-mastery": {title:"합을 맞추는 전략적 조력자",character:"퀴렐",game:"Hollow Knight",description:"피드백과 역할 분담을 통해 동료와 함께 성장하고, 완벽한 호흡으로 난관을 넘을 때 희열을 느낍니다.",keywords:["협력","전략","피드백","성장"],image:"./assets/characters/qurel.png",matchReason:"퀴렐은 뛰어난 지식과 전투 능력을 바탕으로 동료와 자연스럽게 호흡을 맞추며 함께 난관을 해결합니다."},
+    "social-achievement": {title:"성과를 빛내는 스타 플레이어",character:"알렉스",game:"Stardew Valley",description:"사람들과 활발히 교류하면서도 뛰어난 기록과 성취를 인정받고 싶어 하는 플레이어입니다.",keywords:["경쟁","랭킹","인정","목표"],image:"./assets/characters/Alex.png",matchReason:"알렉스는 주변 사람들과 활발히 교류하면서 자신의 목표를 향해 꾸준히 노력하고 성장을 보여주는 인물입니다."},
+    "social-immersion": {title:"관계를 살아가는 롤플레이어",character:"노엘",game:"DELTARUNE",description:"게임 속 인물들과 깊은 관계를 맺고, 그 세계의 한 사람으로 살아가는 경험을 소중히 여깁니다.",keywords:["관계","대화","공감","롤플레잉"],image:"./assets/characters/noell.png",matchReason:"노엘은 주변 인물들과의 관계와 감정에 깊이 연결되어 있으며, 함께하는 사람들과 특별한 이야기를 만들어 갑니다."},
+    "social-creativity": {title:"취향을 나누는 크리에이터",character:"냅스타블룩",game:"UNDERTALE",description:"자신만의 독창적인 스타일을 만들고, 다른 사람과 공유하며 새로운 반응을 얻는 것을 즐깁니다.",keywords:["공유","스타일","창작","커뮤니티"],image:"./assets/characters/napstablook.png",matchReason:"냅스타블룩은 자신만의 음악과 취향을 소중히 여기고, 그것을 다른 사람과 나누며 즐거움을 발견합니다."},
+    "mastery-achievement": {title:"완벽을 반복하는 완주자",character:"하비",game:"Stardew Valley",description:"완벽한 하나의 플레이를 위해 몇 번이고 도전하며, 결국 스스로 세운 목표를 끝까지 달성합니다.",keywords:["완주","숙련","반복","완벽"],image:"./assets/characters/Harveyl.png",matchReason:"하비는 맡은 일을 꼼꼼하게 수행하고 꾸준한 노력으로 목표를 완성해 나가는 성실하고 세심한 인물입니다."},
+    "mastery-immersion": {title:"세계의 진실을 푸는 해석자",character:"렘",game:"Hollow Knight",description:"숨겨진 설정과 단서를 파헤쳐 세계관과 서사를 빈틈없이 이해하려는 플레이어입니다.",keywords:["분석","설정","추리","세계관"],image:"./assets/characters/rem.webp",matchReason:"렘은 고대 유물과 기록을 세심하게 해석하며, 신성둥지의 역사와 숨겨진 이야기를 깊이 이해하려 합니다."},
+    "mastery-creativity": {title:"시스템을 비트는 연구자",character:"로빈",game:"Stardew Valley",description:"게임의 규칙을 깊이 이해한 뒤, 그 구조를 이용해 새롭고 독창적인 플레이를 만들어 냅니다.",keywords:["시스템","실험","전략","변칙"],image:"./assets/characters/Robin.png",matchReason:"로빈은 뛰어난 기술과 경험을 활용해 다양한 건축물을 만들며, 익힌 시스템을 자신만의 결과물로 발전시킵니다."},
+    "achievement-immersion": {title:"이야기를 수집하는 기록가",character:"예언자",game:"Hollow Knight",description:"서브퀘스트와 수집 요소를 빠짐없이 모으며, 세계의 이야기를 하나의 완성된 기록으로 남깁니다.",keywords:["수집","기록","서브퀘스트","완성"],image:"./assets/characters/seer.webp",matchReason:"예언자는 세계 곳곳의 정수를 모으는 여정을 통해 그 안에 담긴 기억과 이야기를 하나씩 발견하도록 이끕니다."},
+    "achievement-creativity": {title:"목표를 새롭게 푸는 개척자",character:"윌리",game:"Stardew Valley",description:"정석적인 길보다 독특한 플레이 방식으로 목표와 도전과제를 달성하는 데 큰 만족을 느낍니다.",keywords:["도전과제","자유","독창성","개척"],image:"./assets/characters/Willy.png",matchReason:"윌리는 자신이 좋아하는 분야를 깊이 파고들며, 자신만의 방식으로 특별한 목표와 새로운 도전에 나섭니다."},
+    "immersion-creativity": {title:"세계에 흔적을 남기는 방랑자",character:"레아",game:"Stardew Valley",description:"다양한 환경을 찾아다니며 세계에 녹아들고, 자신만의 시선과 흔적을 그 안에 남기고 싶어 합니다.",keywords:["탐험","분위기","창작","발견"],image:"./assets/characters/Leah.png",matchReason:"레아는 자연과 주변 환경에서 영감을 얻고, 그 세계 속에서 자신만의 삶과 창작물을 만들어 가는 인물입니다."}
   }
 };
