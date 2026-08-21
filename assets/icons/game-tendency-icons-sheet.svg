@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024">
+<style>.label{font:700 36px Arial,sans-serif;text-anchor:middle;fill:#000000}</style>
+<g transform="translate(64,20) scale(.75)">
+<g fill="none" stroke="#000000" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+<path d="M132 84l112 112M380 84L268 196"/>
+<path d="M224 176L88 312M288 176l136 136"/>
+<path d="M110 336l74-14 14-74M402 336l-74-14-14-74"/>
+<path d="M154 356l50 50M358 356l-50 50"/>
+</g></g>
+<text class="label" x="256" y="470">ACTION</text>
+<g transform="translate(576,20) scale(.75)">
+<g fill="none" stroke="#000000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+<path d="M82 235l84-82c25-24 64-24 89 0l29 28"/>
+<path d="M430 235l-84-82c-25-24-64-24-89 0l-24 24"/>
+<path d="M120 278l92 92c18 18 47 18 65 0l116-116"/>
+<path d="M104 244l-40 40 78 78 40-40"/>
+<path d="M408 244l40 40-78 78-40-40"/>
+<path d="M205 193l46 46c17 17 45 17 62 0l26-25"/>
+<path d="M184 344l-31 31M226 375l-29 29M269 380l-25 25"/>
+</g></g>
+<text class="label" x="768" y="470">SOCIAL</text>
+<g transform="translate(1088,20) scale(.75)">
+<g fill="none" stroke="#000000" stroke-width="30" stroke-linecap="round">
+<circle cx="256" cy="256" r="156"/>
+<circle cx="256" cy="256" r="92"/>
+<circle cx="256" cy="256" r="24" fill="#000000" stroke="none"/>
+<path d="M256 40v108M256 364v108M40 256h108M364 256h108"/>
+</g></g>
+<text class="label" x="1280" y="470">MASTERY</text>
+<g transform="translate(64,532) scale(.75)">
+<g fill="none" stroke="#000000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+<path d="M92 176l76 56 88-128 88 128 76-56-38 190H130z"/>
+<circle cx="92" cy="176" r="18" fill="#000000" stroke="none"/>
+<circle cx="256" cy="104" r="18" fill="#000000" stroke="none"/>
+<circle cx="420" cy="176" r="18" fill="#000000" stroke="none"/>
+<path d="M150 366h212M164 412h184"/>
+</g></g>
+<text class="label" x="256" y="982">ACHIEVEMENT</text>
+<g transform="translate(576,532) scale(.75)">
+<path fill="#000000" d="M349 90c-70 16-122 79-122 154 0 88 71 159 159 159 20 0 40-4 58-11-33 38-82 62-137 62-101 0-183-82-183-183 0-92 68-168 156-181 23-4 46-3 69 0z"/>
+<path fill="#000000" d="M360 142l13 31 31 13-31 13-13 31-13-31-31-13 31-13z"/>
+<path fill="#000000" d="M420 240l9 21 21 9-21 9-9 21-9-21-21-9 21-9z"/>
+</g>
+<text class="label" x="768" y="982">IMMERSION</text>
+<g transform="translate(1088,532) scale(.75)">
+<g fill="#000000">
+<path d="M256 70l32 82 82 32-82 32-32 82-32-82-82-32 82-32z"/>
+<path d="M118 280l18 46 46 18-46 18-18 46-18-46-46-18 46-18z"/>
+<path d="M394 300l16 40 40 16-40 16-16 40-16-40-40-16 40-16z"/>
+</g></g>
+<text class="label" x="1280" y="982">CREATIVITY</text>
+</svg>
