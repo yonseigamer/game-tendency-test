@@ -37,7 +37,7 @@ const testData = {
       {text:"퀘스트·도감·숨은 요소를 빠짐없이 채웠을 때",scores:{achievement:3,creativity:1},next:"q5"},
       {text:"아무도 못 깬 난관을 내 실력으로 넘었을 때",scores:{mastery:2,achievement:2},next:"q5"},
       {text:"좋아하는 인물과 특별한 관계를 만들었을 때",scores:{social:2,immersion:2},next:"q5"}]},
-    q5:{label:"SCENE 05 · WORLD",question:"새로운 세계에 들어섰을 때 가장 먼저 끌리는 것은?",answers:[
+    q5:{label:"SCENE 05 · WORLD",question:"새로운 세계에 들어섰을 때 \n가장 먼저 끌리는 것은?",answers:[
       {text:"이 세계에서 내가 어떤 존재가 될 수 있는지",scores:{immersion:3,creativity:1},next:"q6"},
       {text:"등장인물과 사건이 어떤 이야기로 이어지는지",scores:{immersion:3,social:1},next:"q6"},
       {text:"어떤 적과 위험한 구간이 기다리는지",scores:{action:3,mastery:1},next:"q6"},
@@ -47,7 +47,7 @@ const testData = {
       {text:"맵 구석구석을 뒤져 비밀과 이스터에그를 찾는다.",scores:{creativity:3,achievement:1},next:"q7"},
       {text:"새로운 빌드와 기묘한 조합을 계속 실험한다.",scores:{creativity:3,mastery:1},next:"q7"},
       {text:"메인 이야기에 집중해 세계의 결말을 확인한다.",scores:{immersion:3,achievement:1},next:"q7"}]},
-    q7:{label:"SCENE 07 · THRILL",question:"당신을 가장 빠르게 게임에 몰입시키는 장면은?",answers:[
+    q7:{label:"SCENE 07 · THRILL",question:"당신을 가장 빠르게\n게임에 몰입시키는 장면은?",answers:[
       {text:"폭발과 타격음이 쏟아지는 화려한 전투",scores:{action:3,achievement:1},next:"q8"},
       {text:"실수 한 번이 패배로 이어지는 긴장된 보스전",scores:{action:2,mastery:2},next:"q8"},
       {text:"동료와 동시에 움직여 위기를 넘기는 순간",scores:{action:2,social:2},next:"q8"},
@@ -57,7 +57,7 @@ const testData = {
       {text:"공략을 나누고 함께 실력을 높이기",scores:{social:2,mastery:2},next:"q9"},
       {text:"캐릭터와 스토리에 관해 이야기하기",scores:{social:2,immersion:2},next:"q9"},
       {text:"내 꾸미기·빌드·플레이를 공유하기",scores:{social:2,creativity:2},next:"q9"}]},
-    q9:{label:"SCENE 09 · PERFECT RUN",question:"당신이 말하는 ‘완벽한 플레이’에 가장 가까운 것은?",answers:[
+    q9:{label:"SCENE 09 · PERFECT RUN",question:"당신이 말하는\n‘완벽한 플레이’에 가장 가까운 것은?",answers:[
       {text:"한 번도 실수하지 않고 고난도 구간을 돌파하는 것",scores:{mastery:3,achievement:1},next:"q10"},
       {text:"가장 효율적인 전략과 자원 배분을 찾아내는 것",scores:{mastery:3,creativity:1},next:"q10"},
       {text:"모든 콘텐츠와 목표를 빠짐없이 끝내는 것",scores:{achievement:3,mastery:1},next:"q10"},
